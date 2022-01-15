@@ -10,6 +10,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@300;500;700&family=Roboto:wght@100;400;500;700&family=Source+Sans+Pro&display=swap');
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* Animation */
+
+@keyframes sliding {
+    0% {
+        top:0;
+        left: 0;
+    }
+   
+    50% {
+        top: 140px;
+        left: 60px ;
+    }
+    100% {
+        top: 0;
+        left: 125px;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
 body{
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -189,7 +209,57 @@ h2{
     font-size: 1.3em;
     
 }
-/*....................................................footer..................................................... */
+/* ..................................Featured part.............................................. */
+.feature-section{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+   
+}
+.feature-image{
+    margin-left: 140px;
+}
+.feature-image img{
+    width: 300px;
+    height: 270px;
+}
+.feature-animation{
+    margin-left: 80px;
+}
+.field{
+    display: flex;
+    width: 700px;
+    height: 270px;
+    border: 2px solid #E02C6D;
+    background-color: white;
+}
+.field:hover .visible,.invisible{
+    /* display: block; */
+}
+.field img{
+    margin-top: 30px;
+}
+.camera2{
+    position: absolute;
+    left: 850px;
+    margin-left: 100px;
+    /* display: none; */
+}
+.ball{
+    margin-top: 80px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #E02C6D;
+    border-radius: 25px;
+}
+.field:hover .ball{
+    position: relative;
+    animation: sliding 3s linear 0.2s infinite alternate;
+}
+
+
+/*...................................footer..................................................... */
 
 .footer{
     padding: 20px;
