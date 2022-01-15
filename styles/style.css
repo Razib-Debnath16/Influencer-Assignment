@@ -1,0 +1,213 @@
+/*-------- Default font style --------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@600&family=Poppins:wght@300;500;700&family=Roboto:wght@100;400;500;700&family=Source+Sans+Pro&display=swap');
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*.........................Font style for item details.................................................. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@600&family=Poppins:wght@300;500;700&family=Roboto:wght@100;400;500;700&family=Source+Sans+Pro&display=swap');
+/* ////////////////////////////////////////////////////////////////////////////////////// ///////////////*/
+
+/* ---------------------------Font style for Footer----------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@300;500;700&family=Roboto:wght@100;400;500;700&family=Source+Sans+Pro&display=swap');
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F3F1FF;
+    padding: 0;
+    margin: 0;
+}
+/* ---------------------------------------------------------------------------- */
+nav > .nav-box{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+.nav-box{
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 90px;
+}
+.heading{
+    font-size: 2em;
+}
+.start-inf{
+    display: flex;
+    width: 1160px;
+    height: 430px;
+    margin-top: 120px;
+    margin-left: 130px;
+    
+}
+.start-journey{
+    width: 420px;
+    height: 270px;
+}
+.start{
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 52px;
+}
+.prebook-button {
+    margin-top: 20px;
+}
+.prebook-button a{
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #E02C6D;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white; 
+    border-radius: 30px;
+    text-align: center;
+}
+.dslr{
+    margin-top: 10px;
+    margin-left: 200px;
+}
+.dslr img{
+    width: 400px;
+    height: 380px;
+    background-color: gray;
+    border: 1px solid white;
+    padding: 15px ;
+    border-radius: 20px;
+}
+/* ----------------------------------------------------------------------------------------- */
+                                /* logo section */
+/* ........................................................................................ */
+.logo img{
+    width: 80px;
+    height: 50px;
+    
+}
+.logo{
+    width: 1100px;
+    height: 110px;
+    margin-top: 70px;
+    margin-left: 140px;
+    border: 1px outsi rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;   
+}
+.logo-img{
+    padding-left: 10px;
+    padding-right: 70px;
+}
+/* ----------------------------------------------------------------------------------------- */
+                                /* Popular Collections */
+/* ........................................................................................ */
+
+.popular-items{
+    width: 1000px;
+    margin-left: 130px;
+    margin-bottom: 40px;
+}
+#collections-id{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.items{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-row-gap: 30px;
+ grid-column-gap: 30px;
+ 
+}
+.item-details{
+    background-color: #FFFFFF ;
+    height: 450px;
+    border-radius: 5px;
+    padding: 15px;
+}
+.items-img img{
+    width: 300px;
+    height: 270px;
+}
+h2{
+    margin: 5px;
+    
+}
+.price{
+    margin: 5px;
+}
+.star{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.rating{
+    padding-left: 10px;
+}
+#mini-para{
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 200px;
+}
+.see-button {
+   /* margin-left: 1010px; */
+   position: relative;
+   left: 1000px;
+}
+.see-button a{
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: F3F1FF;
+    text-decoration: none;
+    color: #E02C6D; 
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3em;
+    
+}
+/*....................................................footer..................................................... */
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #03203C;
+    border: 1px solid #03203C;
+    color: white;
+}
+.inf-footer {
+    margin-top: 20px;
+}
+.inf2-footer{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px;
+}
+.social-media a{
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 2em;
+    color: black;
+}
