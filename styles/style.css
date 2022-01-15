@@ -10,9 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@300;500;700&family=Roboto:wght@100;400;500;700&family=Source+Sans+Pro&display=swap');
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* Animation */
+/*.......... Animation for Ball1................*/
 
-@keyframes sliding {
+@keyframes sliding1 {
     0% {
         top:0;
         left: 0;
@@ -20,11 +20,28 @@
    
     50% {
         top: 150px;
-        left: 45px ;
+        left: 70px ;
     }
     100% {
         top: 0;
-        left: 92px;
+        left: 160px;
+    }
+}
+/* ............Animation for Ball2......... */
+
+@keyframes sliding2 {
+    0% {
+        top:0;
+        left: 0;
+    }
+   
+    50% {
+        top: -100px;
+        left: -70px ;
+    }
+    100% {
+        top: 0;
+        left: -160px;
     }
 }
 
@@ -243,7 +260,7 @@ h2{
 
 }
 .feature-animation{
-    margin-left: 80px;
+    margin-left: 50px;
 }
 .field{
     display: flex;
@@ -254,29 +271,40 @@ h2{
     padding: 10px;
     border-radius: 20px;
 }
-.field:hover .visible,.invisible{
-    /* display: block; */
-}
+
 .field img{
     margin-top: 30px;
 }
 .camera2{
     position: absolute;
-    left: 850px;
-    margin-left: 100px;
+    left: 900px;
+    margin-left: 80px;
     /* display: none; */
 }
-.ball{
-    margin-top: 80px;
-    width: 50px;
-    height: 50px;
+.ball1{
+    margin-top: 88px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     background-color: #E02C6D;
     border-radius: 25px;
 }
-.field:hover .ball{
+.ball2{
+    margin-top: 88px;
+    margin-left: 118px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: #E02C6D;
+    border-radius: 25px;
+}
+.field:hover .ball1{
     position: relative;
-    animation: sliding 3s linear 0.2s infinite alternate;
+    animation: sliding1 2s linear 0.2s infinite alternate;
+}
+.field:hover .ball2{
+    position: relative;
+    animation: sliding2 2s linear 0.2s infinite alternate;
 }
 
 
@@ -307,3 +335,81 @@ h2{
     font-size: 2em;
     color: black;
 }
+/* .............................Media Quary For Devices.......................... ..........................................*/
+
+/* For Mobile */
+@media only screen and (max-width:688px) {
+    
+    .nav-box{
+        margin: 5px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-box a{
+        margin-right: 25px;
+    }
+    .heading{
+        margin-left: 60px;
+    }
+     .container{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        width: 100%;
+        /* margin: 5px; */
+        font-size: 20px;
+    }
+    .star{
+        margin-bottom: 5px;
+    }
+    .start-journey{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    .dslr{
+        margin-left: 5px;
+    }
+    .dslr img{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 100px;
+    }
+    .start-inf{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left:5px;
+        margin-top: 5px;
+        
+    }
+    .logo{
+        display: none;
+    }
+    #collections-id{
+        margin-top: 50px;
+        text-align: left;
+    }
+    .popular-items{
+        margin-left: 5px;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 100px;
+        
+        /* grid-row-gap: 30px;
+        grid-column-gap: 30px; */ 
+}
+.feature-heading{
+    position: static;
+}
+.field{
+    display: none;
+}
+.feature-image{
+    margin-left: 5px;
+}
+}
+
