@@ -337,19 +337,23 @@ h2{
 }
 /* .............................Media Quary For Devices.......................... ..........................................*/
 
-/* For Mobile */
+/*..............................For Mobile.................................................... */
 @media only screen and (max-width:688px) {
     
     .nav-box{
         margin: 5px;
         flex-direction: column;
+        padding: 5px;
         width: 100%;
     }
     .nav-box a{
-        margin-right: 25px;
+        margin-right: 5%;
+        /* padding-left: px; */
     }
     .heading{
-        margin-left: 60px;
+        margin-left: 55px;
+        /* margin-bottom: px; */
+        /* font-size: ; */
     }
      .container{
         width: 100%;
@@ -359,9 +363,16 @@ h2{
         width: 100%;
         /* margin: 5px; */
         font-size: 20px;
+        /* margin-left: ; */
     }
     .star{
         margin-bottom: 5px;
+        /* margin-left: ; */
+        /* font-size: ; */
+    }
+    .prebook-button a{
+        margin-bottom: 10px;
+        margin-left: 20%;
     }
     .start-journey{
         display: flex;
@@ -389,6 +400,7 @@ h2{
     }
     #collections-id{
         margin-top: 50px;
+        /* margin-left: ; */
         text-align: left;
     }
     .popular-items{
@@ -397,7 +409,8 @@ h2{
     .items{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin-top: 100px;
+        margin-top: 50px;
+        /* margin-left: ; */
         
         /* grid-row-gap: 30px;
         grid-column-gap: 30px; */ 
@@ -412,4 +425,94 @@ h2{
     margin-left: 5px;
 }
 }
+/*.................................. For Tablet.............................................. */
+@media only screen and (min-width:688px) and (max-width:1024px){
+    .nav-box{
+        margin: 5px;
+        flex-direction: column;
+        /* padding: 5px; */
+        width: 100%;
+    }
+    .nav-box a{
+        margin-right: 80px;
+        padding-left: 10px;
+    }
+    .heading{
+        margin-left: 28%;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+     .container{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        width: 100%;
+        /* margin: 5px; */
+        font-size: 30px;
+        margin-left: 30%;
+    }
+    .prebook-button a{
+        margin-bottom: 10px;
+        margin-left: 50%;
+    }
+    .start{
+        margin-bottom: 20px;
+        margin-left: 20%;
+        font-size: 1.2em;
+    }
+    .start-journey{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    .dslr{
+        margin-left: 5px;
+    }
+    .dslr img{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 200px;
+        margin-left: 18%;
+    }
+    .start-inf{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left:5px;
+        margin-top: 5px;
+        
+    }
+    .logo{
+        display: none;
+    }
+    #collections-id{
+        margin-top: 150px;
+        margin-left: 20%;
+        text-align: left;
+    }
+    .popular-items{
+        margin-left: 5px;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 50px;
+       margin-left: 15%;
+        
+        /* grid-row-gap: 30px;
+        grid-column-gap: 30px; */ 
+}
+.feature-heading{
+    position: static;
+    font-size: 2em;
+    margin-left: 15%;
+}
+.field{
+    display: none;
+}
+.feature-image{
+    margin-left: 20%;
+}
 
+}
