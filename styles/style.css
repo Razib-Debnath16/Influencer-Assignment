@@ -19,12 +19,12 @@
     }
    
     50% {
-        top: 140px;
-        left: 60px ;
+        top: 150px;
+        left: 45px ;
     }
     100% {
         top: 0;
-        left: 125px;
+        left: 92px;
     }
 }
 
@@ -99,7 +99,7 @@ h1{
     height: 380px;
     background-color: #E02C6D;
     border: 1px solid white;
-    padding: 15px ;
+    padding: 10px ;
     border-radius: 20px;
 }
 /* ----------------------------------------------------------------------------------------- */
@@ -115,7 +115,10 @@ h1{
     height: 110px;
     margin-top: 70px;
     margin-left: 140px;
-    border: 1px outsi rgb(128, 128, 128);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(gray,gray);
+    border-image-slice: 1;
     display: flex;
     align-items: center;
     margin-bottom: 100px;   
@@ -210,18 +213,34 @@ h2{
     
 }
 /* ..................................Featured part.............................................. */
+.feature-heading{
+    position: relative;
+    left: 40%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
 .feature-section{
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    
    
 }
 .feature-image{
     margin-left: 140px;
+    overflow: hidden;
 }
 .feature-image img{
     width: 300px;
     height: 270px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #E02C6D;
+    background-color: #E02C6D;
+}
+.feature-image:hover img{
+    transform: scale(1.2);
+    transition: transform 1s ease-in;
+
 }
 .feature-animation{
     margin-left: 80px;
@@ -230,8 +249,10 @@ h2{
     display: flex;
     width: 700px;
     height: 270px;
-    border: 2px solid #E02C6D;
+    border: 5px solid #E02C6D;
     background-color: white;
+    padding: 10px;
+    border-radius: 20px;
 }
 .field:hover .visible,.invisible{
     /* display: block; */
